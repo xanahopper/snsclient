@@ -26,6 +26,11 @@ android {
     androidExtensions {
         experimental = true
     }
+
+    packagingOptions {
+        merge '**/LICENSE.txt'
+        merge '**/NOTICE.txt'
+    }
 }
 
 dependencies {
@@ -47,7 +52,6 @@ dependencies {
     // ViewModel and LiveData
     implementation "androidx.lifecycle:lifecycle-extensions:$lifecycle_version"
     implementation "androidx.lifecycle:lifecycle-common-java8:$lifecycle_version"
-//    kapt "androidx.lifecycle:lifecycle-compiler:$lifecycle_version"
 
     // Room
     implementation "androidx.room:room-runtime:$room_version"
@@ -67,6 +71,9 @@ dependencies {
 
     // Gson
     implementation 'com.google.code.gson:gson:2.8.5'
+
+    // JodaTime
+    implementation 'net.danlew:android.joda:2.10.1.2'
 
     testImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'

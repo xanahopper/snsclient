@@ -1,7 +1,9 @@
 <component name="ProjectDictionaryState">
   <dictionary name="xana">
     <words>
+      <w>gson</w>
       <w>jetpack</w>
+      <w>joda</w>
       <w>okhttp</w>
       <w>snsclient</w>
     </words>
